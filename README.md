@@ -1,3 +1,87 @@
 # METHOD
 
 L'objectif de ce TP est de faire une analyse réplicable d'un jeu de données.
+
+Présentation du dataset
+
+NUMID : Matricule anonyme de la personne interrogée
+CONNAITRE : Réponse à la question "Connaissez-vous les produits biologiques?"
+		- 0 : pas de réponse
+		- 1 : oui
+		- 2 : non
+DIFF : Réponse à la question "Y a t-il une différence entre le produit biologique et produit diététique?"
+		- 0 : pas de réponse
+		- 1 : oui
+		- 2 : non
+CONSOM : Réponse à la question "Avez-vous déjà consommé des produits biologiques?"
+		- 1 : non jamais
+		- 2 : oui une seule fois
+		- 3 : oui rarement
+		- 4 : oui de temps en temps
+		- 5 : oui plusieurs fois par mois
+		- 6 : oui plusieurs fois par semaine
+		- 7 : pas de réponse
+
+MARQUE : Réponse à la question "Parmis les marques suivantes lesquelles connaissez-vous?"
+		- 0 : pas de réponse
+		- 1 : bio vivre
+		- 2 : bjorg
+		- 3 : carrefour bio
+		- 4 : la vie
+		- 5 : vrai
+		- 6 : prosain
+		- 7 : favrichon
+
+CONSVIE: Réponse à la question "Avez-vous déjà consommé des produits "La Vie"?
+		- 0 : pas de réponse
+		- 1 : oui une fois
+		- 2 : oui occasionnellement
+		- 3 : oui réguiliérement
+		- 4 : non jamais 
+
+SEXE: Sexe de la personne
+		- 1 : homme
+		- 2 : femme
+
+AGE: Age de la personne
+		- 1 : moins de 25 ans
+		- 2 : entre 25 et 35 ans
+		- 3 : entre 35 et 45 ans
+		- 4 : entre 45 et 55 ans
+		- 5 : entre 55 et 65 ans
+		- 6 : plus de 65 ans
+
+ETATCIVIL: Etat-civil de la personne
+		- 0 : autre
+		- 1 : marie 
+		- 2 : celibataire
+		- 3 : divoré
+		- 4 : en concubinage
+		- 5 : veuf
+
+NBENF: Nombre d'enfants de la personne
+		- 1 : 0 enfant 
+		- 2 : 1 enfant
+		- 3 : 2 enfants
+		- 4 : 3 enfants
+		- 5 : plus de 3 enfants
+
+SITPROF: Situation professionnelle
+		- 1 : Agriculteur
+		- 2 : Artisan
+		- 3 : Cadre supérieur
+		- 4 : Cadre moyen
+		- 5 : Employé
+		- 6 : Ouvrier
+		- 7 : Retraité
+		- 8 : Autre
+		- 9 : pas de réponse
+
+REVENUE: Revenus mensuels de la personne
+		- 0 : pas de réponse
+		- 1 : moins de 5 kF
+		- 2 : entre 5 et 10 kF
+		- 3 : entre 10 et 15 kF
+		- 4 : entre 15 et 20 kF
+		- 5 : plus de 20 kF
+		- 6 : ne se prononce pas

@@ -2,7 +2,7 @@
 title: "Analyse réplicable d'un jeu de données"
 author: "Christophe Genevey"
 date: "13 septembre 2017"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
@@ -109,5 +109,17 @@ REVENUE: Revenus mensuels de la personne
 library(ggplot2)
 dataset <- read.csv(file="data/pbio.csv", header=TRUE)
 summary(dataset)
+```
+
+```{r}
+ggplot(dataset, aes(x=CONSOM, y=SITPROF, color=factor(CONSOM))) + geom_point()
+```
+
+```{r}
+ggplot(dataset, aes(x=SITPROF)) + geom_histogram()
+```
+
+```{r}
+ggplot(dataset, aes(x=CONSOM, y=SITPROF, color=CONSOM)) + geom_boxplot()
 ```
 

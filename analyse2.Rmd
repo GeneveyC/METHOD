@@ -1,0 +1,47 @@
+---
+title: "Analyse réplicable d'un jeu de données"
+author: "Christophe Genevey"
+date: "13 septembre 2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+L'objectif de cet exercice est d'analyser un jeu de données. Ce jeu de données est disponible sur ce [lien](https://raw.githubusercontent.com/GeneveyC/METHOD/master/data/appart.csv)
+
+## Présentation des données
+
+```
+APP : Identifiant de l'appartement
+SURF : Surface de l'appartement
+PRIX : Prix de l'appartement
+LOCALISATION : Localisation de l'appartement
+```
+
+## Jeu de données
+
+```{r}
+library(ggplot2)
+dataset <- read.csv(file="data/appart.csv", header=TRUE)
+summary(dataset)
+```
+
+```{r}
+ggplot(dataset, aes(x=SURF, y=PRIX, color=factor(SURF))) + geom_point()
+```
+
+```{r}
+ggplot(dataset, aes(x=SURF)) + geom_histogram()
+```
+
+```{r}
+ggplot(dataset, aes(x=PRIX)) + geom_histogram()
+```
+
+```{r}
+ggplot(dataset, aes(x=SURF, y=PRIX, color=factor(SURF))) + geom_boxplot()
+```
